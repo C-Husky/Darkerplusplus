@@ -6,12 +6,12 @@ translations = {
         "no game": "Nenhum jogo selecionado",
         "please select": "Por favor, selecione pelo menos um jogo para continuar.",
         # welcome screen
-        "title 1": "BEM VINDO AO DARKER++",
+        "title 1": "BEM VINDO AO HAMMERFY",
         "subtitle 1": "Deixe seu Hammer++ no modo escuro de maneira simples.",
         "continue": "Continuar",
         # Pop up
         "atention": "ATENÇÃO",
-        "info": "O Darker++ utiliza o Ultrauxtheme <br> para poder aplicar o tema escuro, <br> somente prossiga caso já o tenha <br> instalado e reiniciado seu computador.",
+        "info": "O Hammerfy utiliza o Ultrauxtheme <br> para poder aplicar o tema escuro, <br> somente prossiga caso já o tenha <br> instalado e reiniciado seu computador.",
         # selection screen
         "title 2": "JOGOS ENCONTRADOS",
         "subtitle 2": "Clique no jogo para selecionar sua pasta manualmente.",
@@ -32,12 +32,12 @@ translations = {
         "no game": "No game selected",
         "please select": "Please select at least one game to continue.",
         # welcome screen
-        "title 1": "WELCOME TO DARKER++",
+        "title 1": "WELCOME TO HAMMERFY",
         "subtitle 1": "Set your Hammer++ to dark mode easily.",
         "continue": "Continue",
         # Pop up
         "atention": "ATTENTION",
-        "info": "Darker++ uses Ultrauxtheme <br> to apply the dark theme. <br> Only proceed if you have already <br> installed it and restarted your computer.",
+        "info": "Hammerfy uses Ultrauxtheme <br> to apply the dark theme. <br> Only proceed if you have already <br> installed it and restarted your computer.",
         # selection screen
         "title 2": "GAMES FOUND",
         "subtitle 2": "Click on the game to manually select its folder.",
@@ -58,12 +58,12 @@ translations = {
         "no game": "No se seleccionó ningún juego",
         "please select": "Por favor, seleccione al menos un juego para continuar.",
         # welcome screen
-        "title 1": "BIENVENIDO A DARKER++",
+        "title 1": "BIENVENIDO A HAMMERFY",
         "subtitle 1": "Configura tu Hammer++ en modo oscuro fácilmente.",
         "continue": "Continuar",
         # Pop up
         "atention": "ATENCIÓN",
-        "info": "Darker++ utiliza Ultrauxtheme <br> para aplicar el tema oscuro. <br> Solo continúe si ya lo ha <br> instalado y reiniciado su computadora.",
+        "info": "Hammerfy utiliza Ultrauxtheme <br> para aplicar el tema oscuro. <br> Solo continúe si ya lo ha <br> instalado y reiniciado su computadora.",
         # selection screen
         "title 2": "JUEGOS ENCONTRADOS",
         "subtitle 2": "Haga clic en el juego para seleccionar manualmente su carpeta.",

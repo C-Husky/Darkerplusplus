@@ -27,9 +27,9 @@ def request_admin_permissions():
 class MainApp(QStackedWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Darker++")
+        self.setWindowTitle("Hammerfy")
         self.setFixedSize(800, 500)
-        self.setWindowIcon(QIcon("Resources/images/icon.png"))
+        self.setWindowIcon(QIcon("resources/images/icon.png"))
 
         self.windows_version = self.detect_windows_version()
 

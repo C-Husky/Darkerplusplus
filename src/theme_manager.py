@@ -3,7 +3,7 @@ import subprocess
 from pathlib import Path
 
 def install_and_apply_theme(repository_path, windows_version):
-    theme_folder = Path(repository_path) / "Resources" / "themes"
+    theme_folder = Path(repository_path) / "resources" / "themes"
 
     if windows_version == "Windows 10":
         theme_file = theme_folder / "Aerodark10.theme"

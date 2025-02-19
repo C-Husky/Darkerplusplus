@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton, QHBoxLayout, QDialog
 from PyQt6.QtGui import QPixmap, QIcon
 from PyQt6.QtCore import Qt
-from languages import translations, current_language
+from languages.languages import translations, current_language
 
 class PopupWindow(QDialog):
     def __init__(self, background_color="#333", text_color="white"):
@@ -131,7 +131,7 @@ class WelcomeInterface(QWidget):
 
         # Imagem
         image_label = QLabel()
-        pixmap = QPixmap("resources/images/dazai.png")
+        pixmap = QPixmap("resources/images/welcome_screen/Dazai.png")
         pixmap = pixmap.scaled(900, 400, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
         image_label.setPixmap(pixmap)
         image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)

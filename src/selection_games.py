@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtCore import Qt, pyqtSignal
 from pathlib import Path
-from languages import translations, current_language
+from languages.languages import translations, current_language
 
 class GameSelectionInterface(QWidget):
     install_signal = pyqtSignal()

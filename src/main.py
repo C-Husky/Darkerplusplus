@@ -4,12 +4,15 @@ import platform
 from PyQt6.QtWidgets import QApplication, QStackedWidget, QMessageBox
 from PyQt6.QtGui import QIcon, QPalette, QColor
 
+#import das interfaces
 from welcome_screen import WelcomeInterface
-from selection_screen import GameSelectionInterface
+from selection_games import GameSelectionInterface
 from end_screen import EndScreenInterface
+
+#import do back-end
 from dll_manager import DllManager
 from theme_manager import install_and_apply_theme
-from languages import translations, current_language
+from languages.languages import translations, current_language
 
 def request_admin_permissions():
     try:
@@ -39,20 +42,20 @@ class MainApp(QStackedWidget):
 
         self.dll_manager.find_game_folders()  # Busca inicial pelos jogos
         self.welcome_screen = WelcomeInterface()
-        self.game_selection_screen = GameSelectionInterface(self.dll_manager)
+        self.game_selection_games = GameSelectionInterface(self.dll_manager)
         self.end_screen = EndScreenInterface()
 
         self.addWidget(self.welcome_screen)
-        self.addWidget(self.game_selection_screen)
+        self.addWidget(self.game_selection_games)
         self.addWidget(self.end_screen)
 
         self.welcome_screen.continue_button.clicked.connect(self.show_game_selection)
-        self.game_selection_screen.install_signal.connect(self.execute_installation)
+        self.game_selection_games.install_signal.connect(self.execute_installation)
 
         self.setCurrentWidget(self.welcome_screen)
 
     def detect_windows_version(self):
-        release = platform.release()  # Obtém a versão do Windows (ex.: '10', '11')
+        release = platform.release()
         if release == "10":
             print("Sistema detectado: Windows 10")
             return "Windows 10"
@@ -122,7 +125,7 @@ class MainApp(QStackedWidget):
 
 if __name__ == "__main__":
     if not request_admin_permissions():
-        sys.exit()  # Encerra se o usuário não conceder permissões
+        sys.exit()
 
     app = QApplication(sys.argv)
     main_app = MainApp()

@@ -2,7 +2,7 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton, QApplicat
 from PyQt6.QtCore import Qt
 from PyQt6.QtSvg import QSvgRenderer
 from PyQt6.QtGui import QPainter, QPixmap
-from languages import translations, current_language
+from languages.languages import translations, current_language
 
 class EndScreenInterface(QWidget):
     def __init__(self):

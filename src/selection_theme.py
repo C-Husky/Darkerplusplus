@@ -107,13 +107,17 @@ class AppearanceSelector(QMainWindow):
 
         # Botão de continuar
         continue_button = QPushButton("Continuar")
-        continue_button.setStyleSheet("""
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+        continue_button.setStyleSheet(f"""
+             QPushButton {{
+                background-color: #444;
+                color: {self.text_color};
+                padding: 10px 20px;
+                border-radius: 15px;
+                font-size: 14px;
+            }}
+            QPushButton:hover {{
+                background-color: #555;
+            }}
         """)
         continue_button.setCursor(Qt.CursorShape.PointingHandCursor)
 
